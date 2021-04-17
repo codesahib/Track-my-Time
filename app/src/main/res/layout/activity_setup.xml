@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SetupActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello User"
+        android:textSize="50sp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/setupWelcomeName"/>
+
+    <EditText
+        android:id="@+id/enterAge"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setupWelcomeName"
+        android:layout_marginTop="100dp"
+        android:ems="3"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/enterDOB"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterAge"
+        android:layout_marginTop="50dp"
+        android:hint="Date of Birth"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/enterEmail"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterDOB"
+        android:layout_marginTop="50dp"
+        android:hint="email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/enterPhone"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/enterEmail"
+        android:layout_marginTop="50dp"
+        android:hint="phone"
+        android:inputType="phone" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/enterPhone"
+        android:layout_marginTop="50dp"
+        android:text="Let's track!"
+        android:id="@+id/setupButton"
+        android:onClick="setupButtonClick"/>
+
+</RelativeLayout>
